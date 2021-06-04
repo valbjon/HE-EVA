@@ -95,12 +95,6 @@ steps:
     platform: 'x64'
     configuration: 'Debug'
 
-- task: ms.vss-governance-buildtask.governance-build-task-component-detection.ComponentGovernanceComponentDetection@0
-  displayName: 'Component Detection'
-
-- task: securedevelopmentteam.vss-secure-development-tools.build-task-publishsecurityanalysislogs.PublishSecurityAnalysisLogs@2
-  displayName: 'Publish Security Analysis Logs'
-
 - task: PublishBuildArtifacts@1
   displayName: 'Publish build artifacts'
   inputs:
